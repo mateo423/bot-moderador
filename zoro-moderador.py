@@ -151,7 +151,7 @@ def main():
                 config_data['usuariosbaneados'] = usuariosbaneados
         with open('config.json', 'w') as f:
             json.dump(config_data, f)
-
+    #Eventos
     @bot.event
     async def on_guild_remove(guild):
         with open('config.json', 'r') as f:
@@ -164,5 +164,8 @@ def main():
 
     bot.run(token)
 
+
+
 if __name__ == "__main__":
     main()
+    
